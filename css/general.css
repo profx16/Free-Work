@@ -1,0 +1,112 @@
+body,
+html {
+    font-family: Roboto, sans-serif;
+    background-color: #ffffff;
+    font-size: 10px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+
+h3 {
+    font-size: 2.4rem;
+    line-height: 1.16;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 1.16;
+    margin: 0;
+}
+
+/* Flex */
+
+.container_flex {
+    width: 808px;
+    padding: 35px 25px;
+}
+
+.container_flex h3 {
+    margin: 0 0 9px 0;
+}
+.container_flex {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 23px;
+}
+
+/* Float */
+
+.container_float {
+    width: 808px;
+    padding: 35px 25px;
+}
+
+.container_float img {
+    float: left;
+}
+
+.container_float div {
+    padding: 25px 123px;
+}
+
+.container_float h3 {
+    padding-bottom: 9px;
+}
+
+/* Grid */
+
+.container_grid {
+    width: 808px;
+    padding: 35px 25px;
+}
+
+.container_grid {
+    display: grid;
+    grid-template-columns: 100px 200px 1fr;
+    min-width: 808px;
+    grid-template-areas: "pic name text";
+    gap: 23px;
+    align-items: center;
+    justify-items: start;
+}
+
+.container_grid img {
+    grid-area: pic;
+}
+
+.container_grid h3, p {
+    grid-area: name;
+}
+
+.container_grid h3 {
+    padding-bottom: 9px;
+}
+
+/* Inline-block */
+
+.container_inline-block {
+    width: 808px;
+    padding: 35px 25px;
+}
+
+.container_inline-block img {
+    margin-right: 23px;
+}
+
+.container_inline-block div {
+    display: inline-block;
+}
+
+.container_inline-block h3 {
+    padding-bottom: 9px;
+}
