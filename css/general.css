@@ -19,6 +19,7 @@ img {
 h3 {
     font-size: 2.4rem;
     line-height: 1.16;
+    padding-bottom: 9px;
 }
 
 p {
@@ -34,9 +35,6 @@ p {
     padding: 35px 25px;
 }
 
-.container_flex h3 {
-    margin: 0 0 9px 0;
-}
 .container_flex {
     display: flex;
     justify-content: left;
@@ -57,10 +55,6 @@ p {
 
 .container_float div {
     padding: 25px 123px;
-}
-
-.container_float h3 {
-    padding-bottom: 9px;
 }
 
 /* Grid */
@@ -88,10 +82,6 @@ p {
     grid-area: name;
 }
 
-.container_grid h3 {
-    padding-bottom: 9px;
-}
-
 /* Inline-block */
 
 .container_inline-block {
@@ -107,6 +97,55 @@ p {
     display: inline-block;
 }
 
-.container_inline-block h3 {
-    padding-bottom: 9px;
+/* table */
+
+.container_table {
+    width: 808px;
+    padding: 35px 25px;
+}
+
+.container_table td:first-child {
+    padding-right: 23px;
+} 
+
+.container_table p {
+    margin-bottom: 11px;
+}
+
+/* position */
+
+.container_position {
+    width: 808px;
+    padding: 35px 25px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.container_position div {
+    position: absolute;
+    left: 148px;
+    top: 56px;
+
+}
+
+/* transform */
+
+.container_transform {
+    width: 808px;
+    padding: 35px 25px;
+}
+
+.container_transform div {
+    transform: translate(123px, -80px);
+}
+
+/* columns */
+
+.container_columns {
+    width: 808px;
+    padding: 35px 25px;
+    columns: 127px 6;
+    column-gap: 0;
 }
